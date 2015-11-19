@@ -1,0 +1,33 @@
+# Group
+*eshakhno
+*battal
+
+# Idea
+* Implement a program that generates a planet, including a landscape made using
+procedural terrain generation, trees and other plant-like structures using
+L systems, and water using triangle meshes.
+* Other possible features include dynamic level of detail of the landscape using
+tesselation shaders, dependent upon the zoom level of the camera, and perhaps
+of the trees and plants as well.
+
+# Implementation
+
+## Procedural Terrain Generation
+* We will most likely use an algorithm very similar to the one in the terrain
+lab, but applied to a sphere, rather than to a flat plane. We can initially
+generate the terrain with a relatively low level-of-detail, as the tesselation
+shader will increase the number of vertices within it.
+
+## L Systems
+* In order to generate trees, we will use L systems.
+
+## Tesselation Shader
+* The tesselation shader will be applied to the terrain and water, dependent
+upon the camera zoom, in order to change its level-of-detail.
+
+## Optional features
+* Shadow mapping.
+* Variable ambient lighting, based on the rotation of the planet.
+
+# Preferred TA
+* Carl Olsson
